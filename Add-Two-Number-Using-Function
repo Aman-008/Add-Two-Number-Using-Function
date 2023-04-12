@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int getSum(int a, int b)
+{
+    int result = a + b;
+    return result;
+    //agar return ke niche kuch bhi likha ho to wo execute nahi hota hai return on the spot value ko execute kar deta hai
+}
+int main()
+{
+    int a;
+    int b;
+    cout << "Enter the value of a : " << endl;
+    cin >> a;
+    cout << "Enter the value of b : " << endl;
+    cin >> b;
+    int sum = getSum(a, b);
+    cout << "Addition result is : " << sum;
+    return 0;
+}
